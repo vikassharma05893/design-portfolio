@@ -537,7 +537,11 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
 /* Body originally has 60px top+bottom padding; the hero needs
    to sit flush at the very top of the page, so we override just
    the top value here (bottom padding is preserved). */
-body { padding-top: 0; }
+body { padding-top: 0; padding-bottom: 0; background: #1F2040; }
+
+.work-section-purple {
+  background: var(--color-bg);
+}
 
 :root {
   --hero-bg: #FFFFFF;
@@ -554,7 +558,7 @@ body { padding-top: 0; }
   background: var(--hero-bg);
   color: var(--hero-text);
   font-family: var(--font-body-hero);
-  padding: 56px 0 0;
+  padding: 56px 0 48px;
 }
 
 .hero-inner {
@@ -677,18 +681,23 @@ body { padding-top: 0; }
 
 .hero-photo {
   width: 220px;
-  aspect-ratio: 3 / 4;
+  height: 300px;
   margin-top: 24px;
   border-radius: 8px;
-  overflow: hidden;
   background: var(--hero-yellow-soft);
   position: relative;
+  overflow: visible;
 }
 
 .hero-photo img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto;
+  height: 128%;
+  max-width: none;
+  object-fit: contain;
   display: block;
 }
 
@@ -714,7 +723,6 @@ body { padding-top: 0; }
 .callout-band {
   background: var(--hero-yellow);
   padding: 40px 0;
-  margin-top: 48px;
 }
 
 .callout-inner {
@@ -747,10 +755,11 @@ body { padding-top: 0; }
   margin: 0 auto;
   padding: 0 32px;
   display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
+  flex-wrap: nowrap;
+  gap: 14px;
   align-items: center;
   justify-content: center;
+  overflow-x: auto;
 }
 
 .tool-badge {
@@ -760,8 +769,21 @@ body { padding-top: 0; }
   color: #3F3F52;
   background: #FFFFFF;
   border: 1px solid #E4E4E0;
-  padding: 7px 14px;
+  height: 44px;
+  padding: 0 18px;
   border-radius: 100px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.tool-icon {
+  height: 22px;
+  max-height: 22px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 
 /* =====================================================
@@ -785,7 +807,6 @@ body { padding-top: 0; }
    ===================================================== */
 .site-footer {
   background: linear-gradient(135deg, #2D2E50 0%, #1F2040 100%);
-  margin-top: 48px;
   padding: 28px 32px;
   display: flex;
   flex-wrap: wrap;
@@ -843,10 +864,10 @@ body { padding-top: 0; }
 }
 
 @media (max-width: 600px) {
-  .hero { padding-top: 36px; }
+  .hero { padding: 36px 0 32px; }
   .hero-inner { padding: 0 20px; }
   .hero-name { font-size: 26px; }
-  .callout-band { padding: 28px 0; margin-top: 32px; }
+  .callout-band { padding: 28px 0; }
   .callout-inner { padding: 0 20px; gap: 20px; }
   .tools-inner { padding: 0 20px; }
   .section-heading-wrap { padding-top: 36px; }
