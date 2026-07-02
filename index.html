@@ -4,9 +4,111 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Vikas Sharma — Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+
+  <!-- =====================================================
+       HERO / ABOUT SECTION
+       Everything above the accordion. The accordion section
+       below (.work-block) is completely untouched.
+       ===================================================== -->
+  <header class="hero">
+    <div class="hero-inner">
+      <div class="hero-main">
+        <div class="hero-left">
+          <h1 class="hero-name">Hello, I am Vikas Sharma.</h1>
+          <p class="hero-role-eyebrow">Creative &amp; Results-Driven</p>
+          <p class="hero-role">Senior Graphic Designer | Art Director | Illustrator</p>
+
+          <p class="hero-focus">Designing Clarity for Complex B2B SaaS | Product Marketing &amp; Visual Systems | Driving Adoption | Mining &amp; Industrial SaaS</p>
+
+          <p class="hero-edu">Bachelors in Design | National Institute Of Fashion Technology</p>
+
+          <p class="hero-bio">With 8+ years (2016-Now) of experience specializing in B2B, B2C, and Solo Entrepreneurship Sectors. Expert in crafting visually compelling design assets that tell a brand's unique story and elevate its market presence.</p>
+
+          <p class="hero-bio">Skilled in leveraging AI-driven design tools alongside Adobe Creative Suite to produce innovative, impactful visuals. Passionate about helping brands connect with and engage their target audience through thoughtful, strategic design.</p>
+        </div>
+
+        <div class="hero-right">
+          <div class="engagements">
+            <h2 class="engagements-title">Professional Engagements (2016-Now)</h2>
+
+            <div class="engagement-item">
+              <span class="engagement-badge">NOW</span>
+              <div>
+                <p class="engagement-role">B2B | GroundHog Apps Pvt. Ltd.</p>
+                <p class="engagement-desc">Senior Graphic Designer (Product Marketing &amp; Sales)</p>
+              </div>
+            </div>
+
+            <div class="engagement-item">
+              <div>
+                <p class="engagement-role">B2C | Sustainkart Marketplace <span class="engagement-year">(2022)</span></p>
+                <p class="engagement-desc">Senior Graphic Designer (Online Marketplace Marketing &amp; Sales)</p>
+              </div>
+            </div>
+
+            <div class="engagement-item">
+              <div>
+                <p class="engagement-role">B2B/B2C | Pyrite Technologies <span class="engagement-year">(2021)</span></p>
+                <p class="engagement-desc">Senior Graphic Designer (Marketing Agency)</p>
+              </div>
+            </div>
+
+            <div class="engagement-item">
+              <div>
+                <p class="engagement-role">B2B/B2C | ADVIDS <span class="engagement-year">(2018-2020)</span></p>
+                <p class="engagement-desc">Art Director (Animation)</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- PHOTO: replace src with your actual headshot once uploaded -->
+          <div class="hero-photo">
+            <img src="hero-photo.jpg" alt="Vikas Sharma" onerror="this.parentElement.classList.add('photo-missing')" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!-- =====================================================
+       YELLOW CALLOUT BAND
+       ===================================================== -->
+  <section class="callout-band">
+    <div class="callout-inner">
+      <p>Most B2B SaaS products don't struggle with features, they struggle with clarity. That's where I come in. I help teams turn complex products into clear, usable visuals so users understand them, teams can sell them, and products actually get adopted.</p>
+      <p>My work sits at the intersection of product, marketing, and design. I simplify workflows, build visual systems across presentations, videos, and technical content, and create assets that take ideas from GTM to real adoption.</p>
+      <p>I've worked deeply in mining and industrial SaaS where complexity is high and clarity is critical, but the same problem exists across all B2B products. If your product is powerful but hard to explain, I can help fix that.</p>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       TOOLS ROW
+       ===================================================== -->
+  <section class="tools-row">
+    <div class="tools-inner">
+      <span class="tool-badge">Adobe Creative Cloud</span>
+      <span class="tool-badge">Figma</span>
+      <span class="tool-badge">Microsoft Office</span>
+      <span class="tool-badge">WordPress</span>
+      <span class="tool-badge">Claude</span>
+      <span class="tool-badge">LinkedIn</span>
+    </div>
+  </section>
+
+  <!-- =====================================================
+       LATEST WORK HEADING (sits on the existing purple bg)
+       ===================================================== -->
+  <div class="section-heading-wrap">
+    <div class="container">
+      <h2 class="section-heading">Latest Work (B2B SaaS)</h2>
+    </div>
+  </div>
 
   <main class="container">
 
@@ -887,6 +989,21 @@
     </section><!-- /work-block -->
 
   </main>
+
+  <!-- =====================================================
+       FOOTER
+       ===================================================== -->
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p class="footer-contact">
+        +91-9959038018 &nbsp;|&nbsp;
+        <a href="mailto:vikassharma05893@gmail.com">vikassharma05893@gmail.com</a> &nbsp;|&nbsp;
+        <a href="https://www.linkedin.com/in/vikassharma-05/" target="_blank" rel="noopener">www.linkedin.com/in/vikassharma-05/</a>
+      </p>
+      <p class="footer-tagline">© the guy who explains complex SaaS simply</p>
+    </div>
+    <a class="footer-cta" href="https://vikassharma05893.wixsite.com/designportfolio" target="_blank" rel="noopener">Check more work here &gt;&gt;</a>
+  </footer>
 
   <!-- =====================================================
        LIGHTBOX OVERLAY

@@ -528,3 +528,328 @@ button { font: inherit; cursor: pointer; background: none; border: none; color: 
   .category-title { font-size: 14px; }
   .category-header { gap: 12px; padding: 16px 0; }
 }
+
+/* =====================================================
+   HERO / ABOUT SECTION — new page shell above the accordion
+   The accordion's own rules above are untouched.
+   ===================================================== */
+
+/* Body originally has 60px top+bottom padding; the hero needs
+   to sit flush at the very top of the page, so we override just
+   the top value here (bottom padding is preserved). */
+body { padding-top: 0; }
+
+:root {
+  --hero-bg: #FFFFFF;
+  --hero-heading: #1A1A2E;
+  --hero-text: #3F3F52;
+  --hero-warm: #C75B12;
+  --hero-yellow: #F4B400;
+  --hero-yellow-soft: #FBD65A;
+  --font-display: 'Playfair Display', Georgia, serif;
+  --font-body-hero: 'Inter', var(--font-sans);
+}
+
+.hero {
+  background: var(--hero-bg);
+  color: var(--hero-text);
+  font-family: var(--font-body-hero);
+  padding: 56px 0 0;
+}
+
+.hero-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+}
+
+.hero-main {
+  display: flex;
+  gap: 48px;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.hero-left {
+  flex: 1 1 460px;
+  max-width: 560px;
+}
+
+.hero-name {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(28px, 3.6vw, 40px);
+  color: var(--hero-warm);
+  margin-bottom: 18px;
+  line-height: 1.15;
+}
+
+.hero-role-eyebrow {
+  font-size: 15px;
+  color: var(--hero-text);
+  margin-bottom: 2px;
+}
+
+.hero-role {
+  font-weight: 700;
+  font-size: 16px;
+  color: var(--hero-heading);
+  margin-bottom: 18px;
+}
+
+.hero-focus {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--hero-heading);
+  line-height: 1.6;
+  margin-bottom: 18px;
+}
+
+.hero-edu {
+  font-weight: 700;
+  font-size: 14px;
+  color: var(--hero-warm);
+  margin-bottom: 22px;
+}
+
+.hero-bio {
+  font-size: 14.5px;
+  line-height: 1.75;
+  color: var(--hero-text);
+  margin-bottom: 16px;
+}
+
+.hero-right {
+  flex: 1 1 380px;
+  max-width: 460px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  position: relative;
+}
+
+.engagements-title {
+  font-weight: 700;
+  font-size: 15px;
+  color: var(--hero-heading);
+  margin-bottom: 16px;
+  width: 100%;
+  text-align: left;
+}
+
+.engagement-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  width: 100%;
+  padding: 10px 0;
+  border-bottom: 1px solid #ECECF3;
+}
+
+.engagement-badge {
+  flex-shrink: 0;
+  background: var(--hero-yellow);
+  color: #1A1A2E;
+  font-size: 10px;
+  font-weight: 800;
+  letter-spacing: 0.5px;
+  padding: 3px 7px;
+  border-radius: 4px;
+  margin-top: 2px;
+}
+
+.engagement-role {
+  font-weight: 700;
+  font-size: 13.5px;
+  color: var(--hero-heading);
+  margin-bottom: 2px;
+}
+
+.engagement-year {
+  font-weight: 700;
+  color: var(--hero-text);
+}
+
+.engagement-desc {
+  font-size: 12px;
+  color: #8A8A9B;
+}
+
+.hero-photo {
+  width: 220px;
+  aspect-ratio: 3 / 4;
+  margin-top: 24px;
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--hero-yellow-soft);
+  position: relative;
+}
+
+.hero-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+/* Fallback shown if hero-photo.jpg hasn't been uploaded yet */
+.hero-photo.photo-missing img { display: none; }
+.hero-photo.photo-missing::after {
+  content: 'Add hero-photo.jpg';
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 16px;
+  font-size: 12px;
+  font-weight: 600;
+  color: rgba(26,26,46,0.55);
+}
+
+/* =====================================================
+   YELLOW CALLOUT BAND
+   ===================================================== */
+.callout-band {
+  background: var(--hero-yellow);
+  padding: 40px 0;
+  margin-top: 48px;
+}
+
+.callout-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+.callout-inner p {
+  font-family: var(--font-body-hero);
+  font-size: 13.5px;
+  line-height: 1.75;
+  color: #1A1A2E;
+}
+
+/* =====================================================
+   TOOLS ROW
+   ===================================================== */
+.tools-row {
+  background: #FAFAF9;
+  border-bottom: 1px solid #ECECEA;
+  padding: 22px 0;
+}
+
+.tools-inner {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  align-items: center;
+  justify-content: center;
+}
+
+.tool-badge {
+  font-family: var(--font-body-hero);
+  font-size: 12.5px;
+  font-weight: 600;
+  color: #3F3F52;
+  background: #FFFFFF;
+  border: 1px solid #E4E4E0;
+  padding: 7px 14px;
+  border-radius: 100px;
+}
+
+/* =====================================================
+   "LATEST WORK" SECTION HEADING — sits on the existing
+   purple background, directly above .work-block
+   ===================================================== */
+.section-heading-wrap {
+  padding-top: 56px;
+}
+
+.section-heading {
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(22px, 2.6vw, 28px);
+  color: var(--color-accent-text);
+  opacity: 0.55;
+}
+
+/* =====================================================
+   FOOTER
+   ===================================================== */
+.site-footer {
+  background: linear-gradient(135deg, #2D2E50 0%, #1F2040 100%);
+  margin-top: 48px;
+  padding: 28px 32px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.footer-inner {
+  font-family: var(--font-body-hero);
+}
+
+.footer-contact {
+  color: #FFFFFF;
+  font-size: 13.5px;
+  margin-bottom: 4px;
+}
+
+.footer-contact a {
+  color: #FFFFFF;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.footer-contact a:hover { color: var(--color-accent); }
+
+.footer-tagline {
+  color: rgba(255,255,255,0.55);
+  font-size: 12px;
+}
+
+.footer-cta {
+  display: inline-block;
+  background: var(--color-accent);
+  color: #1F2040;
+  font-weight: 700;
+  font-size: 13.5px;
+  padding: 12px 22px;
+  border-radius: 6px;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: opacity 0.2s;
+}
+
+.footer-cta:hover { opacity: 0.85; }
+
+/* =====================================================
+   HERO — RESPONSIVE
+   ===================================================== */
+@media (max-width: 900px) {
+  .hero-main { flex-direction: column; }
+  .hero-right { align-items: flex-start; }
+  .hero-photo { align-self: center; }
+  .callout-inner { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 600px) {
+  .hero { padding-top: 36px; }
+  .hero-inner { padding: 0 20px; }
+  .hero-name { font-size: 26px; }
+  .callout-band { padding: 28px 0; margin-top: 32px; }
+  .callout-inner { padding: 0 20px; gap: 20px; }
+  .tools-inner { padding: 0 20px; }
+  .section-heading-wrap { padding-top: 36px; }
+  .site-footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
+  .footer-cta { width: 100%; text-align: center; }
+}
