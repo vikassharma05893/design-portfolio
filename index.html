@@ -1,0 +1,721 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vikas Sharma — Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <main class="container">
+
+    <!-- =====================================================
+         WORK SECTION — Top-level accordion block
+         This is the GroundHog section. Duplicate this entire
+         <section class="work-block"> later to add more sections.
+         ===================================================== -->
+    <section class="work-block" data-open="true">
+
+      <!-- Section header — the top-level accordion trigger -->
+      <button class="block-header" aria-expanded="true" aria-controls="block-groundhog">
+        <h2 class="block-title">
+          GroundHog Apps (Mine Digitization &amp; Automation Platform)
+          <span class="block-subtitle">Product Marketing &amp; Sales · Category Showcase</span>
+        </h2>
+        <span class="block-toggle" aria-hidden="true">−</span>
+      </button>
+
+      <!-- Section body — contains all 6 category accordions -->
+      <div class="block-body" id="block-groundhog">
+
+        <!-- ============ CATEGORY 1: SOCIAL MEDIA CREATIVES (open by default) ============ -->
+        <div class="category" data-open="true">
+          <button class="category-header" aria-expanded="true" aria-controls="cat-social">
+            <span class="category-icon">−</span>
+            <span class="category-title">Social media creatives (LinkedIn)</span>
+          </button>
+          <div class="category-body" id="cat-social">
+            <p class="category-desc">
+              Social media creatives are built around translating complex product capabilities into clear, sharp and impactful visual narratives tailored for the mining industry. The focus is on communicating how a product or specific feature functions in real-world scenarios, ensuring the message resonates with the right audience.
+            </p>
+            <p class="category-desc">
+              The work spans a diverse range of formats including structured PDF explainers, realistic industry-mimicking visuals, 2D process-driven illustration carousels, and AI-generated concepts. Each asset is designed to simplify complexity while maintaining technical accuracy and visual engagement.
+            </p>
+
+            <!-- 15 thumbnails: 5 carousels + 10 images. First 3 visible, rest hidden until "Show All". -->
+            <div class="thumb-grid">
+
+              <!-- ===== CAROUSELS (5) ===== -->
+              <div class="thumb" data-type="carousel" data-folder="5-myths-digital-transformation-mining" data-slides="7" data-title="5 Myths About Digital Transformation in Mining">
+                <span class="thumb-tag">CAROUSEL</span>
+                <div class="thumb-image" style="background-image: url('assets/carousels/5-myths-digital-transformation-mining/01.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb" data-type="carousel" data-folder="grade-control-ops-flow" data-slides="6" data-title="Grade Control Ops System Flow">
+                <span class="thumb-tag">CAROUSEL</span>
+                <div class="thumb-image" style="background-image: url('assets/carousels/grade-control-ops-flow/01.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb" data-type="carousel" data-folder="mine-blast-planning" data-slides="6" data-title="Mine Blast Planning">
+                <span class="thumb-tag">CAROUSEL</span>
+                <div class="thumb-image" style="background-image: url('assets/carousels/mine-blast-planning/01.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="carousel" data-folder="real-cost-of-failed-tech" data-slides="6" data-title="The Real Cost of Failed Tech">
+                <span class="thumb-tag">CAROUSEL</span>
+                <div class="thumb-image" style="background-image: url('assets/carousels/real-cost-of-failed-tech/01.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="carousel" data-folder="tyre-costs-soaring" data-slides="4" data-title="Tyre Costs Are Soaring">
+                <span class="thumb-tag">CAROUSEL</span>
+                <div class="thumb-image" style="background-image: url('assets/carousels/tyre-costs-soaring/01.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <!-- ===== IMAGES (10) ===== -->
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/ai-agents-for-mining-.jpg" data-title="AI Agents for Mining — Introduction">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/ai-agents-for-mining-.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/ausimm-creative-01.jpg" data-title="AusIMM Creative 01">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/ausimm-creative-01.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/ausimm-creative-06.jpg" data-title="AusIMM Creative 06">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/ausimm-creative-06.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/ausimm-expo-creative.jpg" data-title="AusIMM Expo Creative">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/ausimm-expo-creative.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/employee-creative.jpg" data-title="Employee Creative">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/employee-creative.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/groundhog-vs-miscommunication..jpg" data-title="GroundHog vs Miscommunication">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/groundhog-vs-miscommunication..jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/happy-ugadi-2026.jpg" data-title="Happy Ugadi 2026">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/happy-ugadi-2026.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/hiring-creative.jpg" data-title="Hiring Creative">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/hiring-creative.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/how-to-calculate your-mines-oee-creative.jpg" data-title="How to Calculate Your Mine's OEE">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/how-to-calculate your-mines-oee-creative.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="image" data-src="assets/images/jason-at-big-five-construct-speaker.jpg" data-title="Jason at BIG FIVE Construct — Speaker">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image" style="background-image: url('assets/images/jason-at-big-five-construct-speaker.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+            </div>
+
+            <div class="category-action">
+              <button class="btn-show-all">Show All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ CATEGORY 2: INFOGRAPHICS ============ 
+     Copy this entire <div class="category"> block and 
+     paste it into your index.html, replacing the existing 
+     Infographics category block. -->
+<div class="category">
+  <button class="category-header" aria-expanded="false" aria-controls="cat-info">
+    <span class="category-icon">+</span>
+    <span class="category-title">Infographics (LinkedIn &amp; Offline Print Assets)</span>
+  </button>
+
+  <div class="category-body" id="cat-info" hidden>
+
+    <p class="category-desc">
+      Infographics are designed to simplify complex technical concepts into clear, structured visual systems that are easy to understand and retain.
+    </p>
+
+    <p class="category-desc">
+      This section includes infographics, event backdrops, and brochures used across digital and offline communication.
+    </p>
+
+    <div class="thumb-grid">
+
+      <!-- ========= INFOGRAPHICS ========= -->
+
+      <div class="thumb" data-type="image" data-src="assets/infographics/Infographic-images/infographic-cyber-security.jpg" data-title="Cyber Security Infographic">
+        <span class="thumb-tag">INFOGRAPHIC</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/infographic-cyber-security.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb" data-type="image" data-src="assets/infographics/Infographic-images/infographic-process.jpg" data-title="Process Infographic">
+        <span class="thumb-tag">INFOGRAPHIC</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/infographic-process.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb" data-type="image" data-src="assets/infographics/Infographic-images/infographic-stats.jpg" data-title="Stats Infographic">
+        <span class="thumb-tag">INFOGRAPHIC</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/infographic-stats.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb" data-type="image" data-src="assets/infographics/Infographic-images/infographic-mine-exploration-2026.jpg" data-title="Mine Exploration 2026">
+        <span class="thumb-tag">INFOGRAPHIC</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/infographic-mine-exploration-2026.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <!-- ========= BACKDROPS ========= -->
+
+      <div class="thumb hidden-thumb" data-type="image" data-src="assets/infographics/Infographic-images/backdrop-ausimm-event.jpg" data-title="AusIMM Event Backdrop">
+        <span class="thumb-tag">BACKDROP</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/backdrop-ausimm-event.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb" data-type="image" data-src="assets/infographics/Infographic-images/backdrop-ausimm-event-black.jpg" data-title="AusIMM Event Backdrop (Black)">
+        <span class="thumb-tag">BACKDROP</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/backdrop-ausimm-event-black.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb" data-type="image" data-src="assets/infographics/Infographic-images/backdrop-ausimm-event-table-throw.jpg" data-title="AusIMM Event Table Throw">
+        <span class="thumb-tag">BACKDROP</span>
+        <div class="thumb-image" style="background-image: url('assets/infographics/Infographic-images/backdrop-ausimm-event-table-throw.jpg');"></div>
+        <button class="thumb-expand" aria-label="Open preview">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <!-- ========= BROCHURES (PDFs) =========
+           NOTE: PDFs need cover images. Either:
+           1. Generate JPG covers (first page of PDF as image), save as e.g., brochure-ahs-e-cover.jpg
+           2. Or leave as is — the styled PDF placeholder will show
+           Clicking opens the PDF in a new browser tab. -->
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-ahs-e.pdf" data-title="AHS-E Brochure">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">AHS-E</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-corporate.pdf" data-title="Corporate Brochure">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">Corporate</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-high-precision.pdf" data-title="High Precision Brochure">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">High Precision</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-integrated-platform-for-mine-digitization-and-automation-solutions.pdf" data-title="Integrated Platform for Mine Digitization">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">Integrated Platform</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-open-pit.pdf" data-title="Open Pit Brochure">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">Open Pit</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-performance-engineering-groundhog.pdf" data-title="Performance Engineering">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">Performance Engineering</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+      <div class="thumb hidden-thumb pdf-thumb" data-type="pdf" data-src="assets/infographics/brochure/brochure-rtls-ausimm.pdf" data-title="RTLS AusIMM">
+        <span class="thumb-tag">BROCHURE</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+          <span class="pdf-name">RTLS AusIMM</span>
+        </div>
+        <button class="thumb-expand" aria-label="Open PDF">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+        </button>
+      </div>
+
+    </div>
+
+    <div class="category-action">
+      <button class="btn-show-all">Show All</button>
+    </div>
+
+  </div>
+</div>
+
+        <!-- ============ CATEGORY 3: PRODUCT VIDEOS ============ -->
+        <div class="category">
+          <button class="category-header" aria-expanded="false" aria-controls="cat-videos">
+            <span class="category-icon">+</span>
+            <span class="category-title">Product Videos (LinkedIn / YouTube)</span>
+          </button>
+          <div class="category-body" id="cat-videos" hidden>
+            <p class="category-desc">
+              Video content focuses on showcasing the most critical aspects of products within the overall product ecosystem. It is designed to clearly explain features, workflows, technical specifications, and key functional capabilities in a visually engaging and structured manner.
+            </p>
+            <p class="category-desc">
+              The approach prioritizes clarity and impact, using visuals to break down complex processes into easily understandable narratives. Each video is crafted to communicate product value effectively, ensuring that both technical and non-technical audiences can grasp how the system works and why it matters.
+            </p>
+            <!-- 13 YouTube videos: 3 visible, rest hidden until "Show All" -->
+            <div class="thumb-grid thumb-grid-videos">
+
+              <div class="thumb" data-type="video" data-youtube-id="htorAH2Sujo" data-title="GroundHog Maintenance Wallpaper">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/htorAH2Sujo/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb" data-type="video" data-youtube-id="9IfMwjUG32U" data-title="GroundHog Operations Wallpaper">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/9IfMwjUG32U/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb" data-type="video" data-youtube-id="Jr67lHzSqsk" data-title="GroundHog Safety Wallpaper">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/Jr67lHzSqsk/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="J1GSP6akO0k" data-title="Icon Animation Mode 1">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/J1GSP6akO0k/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="x9cqmfNDaUM" data-title="Icon Animation Mode 2">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/x9cqmfNDaUM/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="E1-luC4ej6E" data-title="Icon Animation Mode 3">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/E1-luC4ej6E/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="qxGSeMETyH4" data-title="Presentation Manual">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/qxGSeMETyH4/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="eUe1kVtsnSg" data-title="Product Explainer">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/eUe1kVtsnSg/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="Ir5FdP_loKw" data-title="Product Feature Trailer">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/Ir5FdP_loKw/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="QJ8Ekcu10XU" data-title="Product Quick Manual">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/QJ8Ekcu10XU/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="A8jIY3BaEQw" data-title="Product Trailer">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/A8jIY3BaEQw/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="cLdQdHrLmOA" data-title="Year Rewind Video">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/cLdQdHrLmOA/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+              <div class="thumb hidden-thumb" data-type="video" data-youtube-id="rghafh-V_cs" data-title="YouTube Shorts Product Video">
+                <span class="thumb-tag">VIDEO</span>
+                <div class="thumb-image" style="background-image: url('https://img.youtube.com/vi/rghafh-V_cs/hqdefault.jpg');"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+
+            </div>
+            <div class="category-action">
+              <button class="btn-show-all">Show All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ CATEGORY: BRAND (VISUAL ARCHITECTURE) ============ -->
+<div class="category">
+  <button class="category-header" aria-expanded="false" aria-controls="cat-identity">
+    <span class="category-icon">+</span>
+    <span class="category-title">The Brand (Visual Architecture)</span>
+  </button>
+
+  <div class="category-body" id="cat-identity" hidden>
+
+    <p class="category-desc">
+      Developing and maintaining a consistent visual identity across all digital touchpoints including applications, marketing assets, and communication platforms.
+    </p>
+
+    <p class="category-desc">
+      Focused on building structured, scalable brand systems covering guidelines, merchandising, templates, and UI frameworks.
+    </p>
+
+    <div class="thumb-grid">
+
+      <!-- BRAND GUIDELINES -->
+      <div class="thumb" data-type="carousel"
+           data-folder="Assets/brand-visual-architecture/brandbook"
+           data-slides="23"
+           data-title="Brand Guidelines">
+        <span class="thumb-tag">BRAND GUIDELINES</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/brandbook/01.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <!-- BUSINESS CARD -->
+      <div class="thumb pdf-thumb"
+           data-type="pdf"
+           data-src="Assets/brand-visual-architecture/merchandise-branding/business-cards-groundhog.pdf"
+           data-title="Business Cards">
+        <span class="thumb-tag">BUSINESS CARD</span>
+        <div class="thumb-image pdf-placeholder">
+          <span class="pdf-icon">PDF</span>
+        </div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <!-- HARDWARE -->
+      <div class="thumb"
+           data-type="image"
+           data-src="Assets/brand-visual-architecture/merchandise-branding/hardware-branding.jpg"
+           data-title="Hardware Branding">
+        <span class="thumb-tag">HARDWARE BRANDING</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/merchandise-branding/hardware-branding.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <!-- TSHIRTS -->
+      <div class="thumb"
+           data-type="image"
+           data-src="Assets/brand-visual-architecture/merchandise-branding/t-shirt-branding-black.jpg"
+           data-title="T-Shirt Black">
+        <span class="thumb-tag">T-SHIRT BRANDING</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/merchandise-branding/t-shirt-branding-black.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <div class="thumb"
+           data-type="image"
+           data-src="Assets/brand-visual-architecture/merchandise-branding/t-shirt-branding-yellow.jpg"
+           data-title="T-Shirt Yellow">
+        <span class="thumb-tag">T-SHIRT BRANDING</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/merchandise-branding/t-shirt-branding-yellow.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <!-- TEMPLATES -->
+      <div class="thumb" data-type="image"
+           data-src="Assets/brand-visual-architecture/template-creative-branding/templates-branding-01.jpg">
+        <span class="thumb-tag">TEMPLATE CREATIVE</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/template-creative-branding/templates-branding-01.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <div class="thumb" data-type="image"
+           data-src="Assets/brand-visual-architecture/template-creative-branding/templates-branding-02.jpg">
+        <span class="thumb-tag">TEMPLATE CREATIVE</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/template-creative-branding/templates-branding-02.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <div class="thumb" data-type="image"
+           data-src="Assets/brand-visual-architecture/template-creative-branding/templates-branding-03.jpg">
+        <span class="thumb-tag">TEMPLATE CREATIVE</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/template-creative-branding/templates-branding-03.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <div class="thumb" data-type="image"
+           data-src="Assets/brand-visual-architecture/template-creative-branding/templates-branding-04.jpg">
+        <span class="thumb-tag">TEMPLATE CREATIVE</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/template-creative-branding/templates-branding-04.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <div class="thumb" data-type="image"
+           data-src="Assets/brand-visual-architecture/template-creative-branding/templates-branding-05.jpg">
+        <span class="thumb-tag">TEMPLATE CREATIVE</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/template-creative-branding/templates-branding-05.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+      <!-- UI KIT -->
+      <div class="thumb"
+           data-type="external"
+           data-link="https://www.figma.com/design/PwcSMol7S9Cnlcy767I8xg/website-ui-kit?node-id=0-1&t=BQlcBGJXoPbljszw-1">
+        <span class="thumb-tag">UI-KIT</span>
+        <div class="thumb-image"
+             style="background-image:url('Assets/brand-visual-architecture/ui-kit/figma-thumbnail-ui-kit.jpg')"></div>
+        <button class="thumb-expand">+</button>
+      </div>
+
+    </div>
+
+    <div class="category-action">
+      <button class="btn-show-all">Show All</button>
+    </div>
+
+  </div>
+</div>
+
+        <!-- ============ CATEGORY 5: WEB DESIGN ============ -->
+        <div class="category">
+          <button class="category-header" aria-expanded="false" aria-controls="cat-web">
+            <span class="category-icon">+</span>
+            <span class="category-title">Web Design (WordPress / Elementor) · Website UI · Micro-animations · Frontend/Backend Coding</span>
+          </button>
+          <div class="category-body" id="cat-web" hidden>
+            <p class="category-desc">
+              Designed and developed website UI systems from concept to deployment. Created full layout architecture and user flows in Figma, followed by implementation using WordPress and Elementor, including testing and go-live execution.
+            </p>
+            <p class="category-desc">
+              Built interactive UI sections and micro-animations to enhance user experience and improve how complex product workflows are communicated. The focus is on making product processes intuitive, visually engaging, and easier for users and clients to understand through purposeful interaction design.
+            </p>
+            <div class="thumb-grid">
+              <div class="thumb" data-type="image">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+              <div class="thumb" data-type="gif">
+                <span class="thumb-tag">GIF</span>
+                <div class="thumb-image"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+              <div class="thumb" data-type="image">
+                <span class="thumb-tag">IMAGE</span>
+                <div class="thumb-image"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+            </div>
+            <div class="category-action">
+              <button class="btn-show-all">Show All</button>
+            </div>
+          </div>
+        </div>
+
+        <!-- ============ CATEGORY 6: BLOGS, EBOOKS, NEWSLETTERS, PRESENTATIONS ============ -->
+        <div class="category">
+          <button class="category-header" aria-expanded="false" aria-controls="cat-blogs">
+            <span class="category-icon">+</span>
+            <span class="category-title">Blogs, E-books, Newsletters &amp; Presentations</span>
+          </button>
+          <div class="category-body" id="cat-blogs" hidden>
+            <p class="category-desc">
+              Focused on creating high-impact informational assets including ebooks, blog visuals, newsletter layouts, and presentations. Each asset is designed to communicate product capabilities clearly while maintaining strong visual consistency across platforms.
+            </p>
+            <p class="category-desc">
+              The approach emphasizes clarity, structure, and storytelling to ensure complex product information is easy to understand and engaging for the audience. These assets are optimized for distribution across websites, social media and email campaigns, supporting effective product communication and driving customer engagement and conversion.
+            </p>
+            <div class="thumb-grid">
+              <div class="thumb" data-type="pdf">
+                <span class="thumb-tag">PDF</span>
+                <div class="thumb-image"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+              <div class="thumb" data-type="carousel">
+                <span class="thumb-tag">CAROUSEL</span>
+                <div class="thumb-image"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+              <div class="thumb" data-type="pdf">
+                <span class="thumb-tag">PDF</span>
+                <div class="thumb-image"></div>
+                <button class="thumb-expand" aria-label="Open preview">
+                  <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="15 3 21 3 21 9"></polyline><polyline points="9 21 3 21 3 15"></polyline><line x1="21" y1="3" x2="14" y2="10"></line><line x1="3" y1="21" x2="10" y2="14"></line></svg>
+                </button>
+              </div>
+            </div>
+            <div class="category-action">
+              <button class="btn-show-all">Show All</button>
+            </div>
+          </div>
+        </div>
+
+      </div><!-- /block-body -->
+    </section><!-- /work-block -->
+
+  </main>
+
+  <!-- =====================================================
+       LIGHTBOX OVERLAY
+       Used for image, carousel, and video previews.
+       JavaScript populates the content based on what was clicked.
+       ===================================================== -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-hidden="true">
+    <div class="lightbox-stage">
+      <span class="lightbox-title" id="lightboxTitle"></span>
+      <button class="lightbox-close" id="lightboxClose" aria-label="Close preview">×</button>
+      <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous slide">‹</button>
+      <div class="lightbox-content" id="lightboxContent"></div>
+      <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next slide">›</button>
+      <span class="lightbox-counter" id="lightboxCounter"></span>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
