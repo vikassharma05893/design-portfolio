@@ -859,7 +859,7 @@ body { padding-top: 0; padding-bottom: 0; background: #1F2040; }
 }
 
 @media (max-width: 600px) {
-  .hero { padding: 36px 0 32px; }
+  .hero { padding: 36px 0 0; }
   .hero-inner { padding: 0 20px; }
   .hero-name { font-size: 26px; }
   .callout-band { padding: 28px 0; }
