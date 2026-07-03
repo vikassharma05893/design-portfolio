@@ -558,7 +558,7 @@ body { padding-top: 0; padding-bottom: 0; background: #1F2040; }
   background: var(--hero-bg);
   color: var(--hero-text);
   font-family: var(--font-body-hero);
-  padding: 56px 0 48px;
+  padding: 56px 0 0;
 }
 
 .hero-inner {
