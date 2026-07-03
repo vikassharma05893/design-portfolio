@@ -684,7 +684,7 @@ body { padding-top: 0; padding-bottom: 0; background: #1F2040; }
   height: 300px;
   margin-top: 24px;
   border-radius: 8px;
-  background: var(--hero-yellow-soft);
+  background: transparent;
   overflow: hidden;
   position: relative;
 }
@@ -864,7 +864,17 @@ body { padding-top: 0; padding-bottom: 0; background: #1F2040; }
   .hero-name { font-size: 26px; }
   .callout-band { padding: 28px 0; }
   .callout-inner { padding: 0 20px; gap: 20px; }
-  .tools-inner { padding: 0 20px; }
+  .tools-inner {
+    padding: 0 20px;
+    justify-content: flex-start;
+    -webkit-overflow-scrolling: touch;
+    scroll-padding-right: 20px;
+  }
+  .tools-inner::after {
+    content: '';
+    flex-shrink: 0;
+    width: 4px;
+  }
   .section-heading-wrap { padding-top: 36px; }
   .site-footer { padding: 24px 20px; flex-direction: column; align-items: flex-start; }
   .footer-cta { width: 100%; text-align: center; }
